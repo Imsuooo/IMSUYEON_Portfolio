@@ -1,0 +1,692 @@
+@charset 'UTF-8';
+
+#header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    background: #dfdfdf; 
+    .mainBox{
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .category{
+            margin-top: 100px;
+            width: auto;
+            .fillW{
+                display: block;
+                width: auto;
+                height: auto;
+                margin: 50px 0 60px 60px;
+                &:hover>svg{
+                    fill: #000;
+                }
+            }
+            .hello{
+                margin: 60px 0 60px 60px;
+                .line{
+                    .blackBack{
+                        display: inline-block;
+                        background: #000;
+                        border-radius: 40px;
+                        color: #fff;
+                        padding: 4px 17px;
+                        font-size: 20px;
+                    }
+                }
+                .down{
+                    margin-top: 13px;
+                }
+            }
+        }
+        .mainImg {
+            position: relative;
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            .bubble{
+                position: absolute;
+                top: 0;
+            }
+            .uxuiHeaderImg {
+                width: auto;
+                height: 100%;
+                display: block;
+                padding: 40px 0 40px 40px;
+            }
+        }
+    }
+        .pofo_info {
+            width: 100%;
+            position: absolute;
+            bottom: 5%;
+            display: flex;
+            justify-content: space-between;
+            color: #000;
+            font-weight: 200;
+            font-size: 1.4rem;
+            padding: 0 5%;
+        }
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    .introduce{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 30px 80px 30px;
+        .textBox{
+            font-size: 18px;
+            color: #525252;
+        }
+        .introduceTitle{
+            font-size: 2.8rem;
+            margin-bottom: 2%;
+        }
+        .left{
+            width: 100%;
+            .picture{
+                scale: 0.8;
+                >img{
+                    display: block;
+                }
+            }
+            .infoBox{
+                padding-left: 7%;
+                margin-bottom: 5%;
+            }
+            .educationBox{
+                padding-left: 7%;
+            }
+        }
+        .right{
+            width: 100%;
+            padding-right: 7%;
+            .careerBox{
+                margin-bottom: 5%;
+            }
+        }
+    }
+    .hardskillBox{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        .hardSkill{
+            width: 400px;
+            margin: 0 auto;
+            >img{
+                width: 100%;
+            }
+        }
+        .hardskillTitle{
+            padding: 0 5%;
+            font-size: 3.5rem;
+        }
+        .hardskillList{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2%;
+            padding: 3% 5% 5%;
+            >li{
+                height: 100%;
+                width: 400px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: #E8E8E8;
+                border-radius: 20px;
+                box-shadow: 2px 7px 10px #00000032;
+                .hardskillName{
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 50px 0 20px;
+                }
+                >img{
+                    display: block;
+                    width: 210px;
+                    height: 210px;
+                }
+                .skillText{
+                    font-size: 18px;
+                    font-weight: 200;
+                    padding: 20px 0;
+                    width: 275px;
+                    color: #fff;
+                    background: #000;
+                    border-radius: 2px;
+                    margin: 20px 0 50px;
+                    box-shadow: 3px 3px 4px #0000004f;
+                }
+            }
+        }
+    }
+    .contentBox{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-top: 90px;
+        .contentTitle{
+            padding: 0 5%;
+            font-size: 3.5rem;
+        }
+        .fileBox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2%;
+            padding: 3% 5% 5%;
+            .file{
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                &:hover .fileImg,  &:hover>span{
+                    background: #d7d7d7;
+                    border-radius: 3%;
+                }
+             .fileImg{
+                padding: 12px 10px 12px 14px;
+                display: block;
+                .fileClose{
+                    width: 100%;
+                    display: block;
+                }
+                .fileOpen{
+                    width: 100%;
+                    display: none;
+                }
+             }
+             >span{
+                display: inline-block;
+                padding: 5px 10px;
+                margin-top: 2%;
+            }
+            }
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            padding: 1% 5%;
+            .contentItem{
+                display: none;
+                flex-direction: column;
+                position: relative;
+                .btnP{
+                    position: relative;
+                    >img{
+                        display: block;
+                        width: 100%;
+                    }
+                    .moreBtn{
+                        position: absolute;
+                        width: auto;
+                        display: block;
+                        top: 20%;
+                        left: 7%;
+                        font-size: 1.3rem;
+                        padding: 5px 14px;
+                        border-radius: 30px;
+                        border: 1px solid #000;
+                        transition: 0.3s;
+                        color: #000;
+                        &:hover{
+                            color: #fff;
+                            background: #000;
+                        }
+                    }
+                    .moreBtnm{
+                        top: 16%;
+                    }
+                }
+                .btnE{
+                    .moreBtn{
+                        top: 7.5%;
+                        left: 7%;
+                    }
+                }
+                .linkBox{
+                    display: flex;
+                    >a{
+                        display: block;
+                        position: relative;
+                        >img{
+                            width: 100%;
+                            vertical-align:bottom;
+                        }
+                        .sitegoL{
+                            opacity: 0;
+                            position: absolute;
+                            color: #fff;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-40%,-50%);
+                            font-size: 1.4rem;
+                            transition: .3s ease-in-out;
+                            background-color: #000000c3;
+                            padding: 10px 13px;
+                            border-radius: 70px;
+                            border: 1px solid #ffffff;
+                        }
+                        .sitegoR{
+                            opacity: 0;
+                            position: absolute;
+                            color: #fff;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-60%,-50%);
+                            font-size: 1.4rem;
+                            transition: .3s ease-in-out;
+                            background-color: #000000c3;
+                            padding: 10px 13px;
+                            border-radius: 70px;
+                            border: 1px solid #ffffff;
+                        }
+                        &:hover{
+                            .sitegoL{
+                                opacity: 1;
+                            }
+                            .sitegoR{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .none{
+                        pointer-events: none; 
+                       }
+                }
+            }
+            .eheheProject{
+                .eheheLast{
+                    width: 100%;
+                    position: relative;
+                    .eheheProject04{
+                        width: 100%;
+                    }
+                    .gifArea{
+                        position: absolute;
+                        width: 53%;
+                        display: flex;
+                        bottom: 14.6%;
+                        left: 24%;
+                        gap: 1%;
+                        .gifL{
+                            width: 71.7%;
+                            >img{
+                                width: 100%;
+                            }
+                        }
+                        .gifR{
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1%;
+                            >img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+        }
+        }
+    }
+}
+#footer{
+    .topButton{
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        width: 130px;
+        height: 130px;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+        >img{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1260px) {
+    #header{
+        height: 100%;
+        .mainBox{
+           flex-wrap: wrap;
+           padding: 30px;
+            .category{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 40px 0 20px;
+                .fillW{
+                    margin: 0 auto;
+                    text-align: center;
+                    >svg{
+                        width: 90%;
+                    }
+                }
+                .hello{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 50px 0;
+                    .line{
+                        margin-top: 0;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .mainImg {
+                width: 100%;
+                height: inherit;
+                .bubble{
+                    width: 75%;
+                }
+                .me{
+                    width: 100%;
+                }
+                .uxuiHeaderImg {
+                    height: initial;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+    #main{
+        .introduce{
+            align-items: flex-end;
+            gap: 2%;
+        }
+        .hardskillBox{
+            padding-bottom: 80px;
+            .hardskillList{
+                gap: 1.5%;
+            }
+        }
+        .contentBox{
+            .content{
+                .contentItem{
+                    .btnP{
+                        .moreBtn{
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .linkBox{
+                        >a{
+                            .sitegoL{
+                                font-size: 1.2rem;
+                                text-align: center;
+                                width: 65%;
+                            }
+                            .sitegoR{
+                                font-size: 1.2rem;
+                                text-align: center;
+                                width: 65%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    #main
+    .hardskillBox{
+        padding-bottom: 80px;
+        .hardSkill{
+            width: 340px;
+        }
+        .hardskillList{
+            flex-direction: column;
+           >li{
+            width: 100%;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            .skillText{
+                width: 90%;
+            }
+           }
+        }
+    }
+    .contentBox .content .contentItem .btnP .moreBtn{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:840px) {
+    #main{
+        .introduce{
+             flex-wrap: wrap;
+            padding: 20px 30px 90px 30px;
+            text-align: center;
+            .left{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .picture{
+                    width: 260px;
+                    scale: 1;
+                    margin: 70px 0 40px;
+                    >img{
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                .infoBox{
+                    padding-left: 0%;
+                }
+                .educationBox{
+                    padding-left: 0%;
+                    margin-bottom: 5%;
+                }
+            }
+            .right{
+                padding-right: 0%;
+                .careerBox{
+                    margin-bottom: 5%;
+                }
+            }
+        }
+        .hardskillBox{
+            .hardSkill{
+                width: 300px;
+            }
+        }
+        .contentBox{
+            .content{
+                .contentItem{
+                    .linkBox{
+                        >a{
+                            .sitegoL{
+                                font-size: 1rem;
+                                width: 65%;
+                            }
+                            .sitegoR{
+                                font-size: 1rem;
+                                width: 65%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .topButton{
+            right: 3%;
+            bottom: 3%;
+            width: 62px;
+            height: 62px;
+        }
+    }
+}
+@media screen and (max-width:700px) {
+    #header {
+        .mainBox{
+            padding: 30px 0;
+             .category{
+                 flex-wrap: wrap;
+                 margin: 0;
+                 height: fit-content;
+                 .fillW{
+                   padding: 10px;
+                 }
+             }
+             .mainImg {
+                height: fit-content;
+             }
+         }
+             .pofo_info {
+                 bottom: 3%;
+                 font-size: 1.2rem;
+             }
+    }
+    #main{
+        .hardskillBox{
+            .hardskillTitle{font-size: 3rem;}
+        }
+        .contentBox{
+            padding-top: 60px;
+            .contentTitle{
+                font-size: 3rem;
+            }
+            .fileBox{
+                gap: 1%;
+                .file{
+                 .fileImg{
+                    padding: 10px 8px 10px 12px;
+                 }
+                 >span{
+                    padding: 3px 8px;
+                    font-size: 1rem;
+                }
+                }
+            }
+            .content{
+                padding: 1% 3%;
+                .contentItem{
+                    .btnP{
+                        .moreBtn{
+                            padding: 3px 10px;
+                            font-size: 0.8rem;
+                        }
+                    }
+                    .linkBox{
+                        >a{
+                            .sitegoL{
+                                font-size: 0.8rem;
+                                width: 60%;
+                                padding: 3px 7px;
+                            }
+                            .sitegoR{
+                                font-size: 0.8rem;
+                                width: 60%;
+                                padding: 3px 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    #header {
+        height: fit-content;
+        padding: 30px 0;
+        .mainBox{
+             .category{
+                margin: 0 0 30px 0;
+                 .fillW{
+                    padding: 5px;
+                     >svg{
+                         width:83%;
+                     }
+                 }
+                 .hello{
+                   display: none;
+                }
+             }
+             .mainImg {
+                scale: 1.2;
+             }
+         }
+             .pofo_info {
+                 bottom: 3%;
+                 font-size: 1rem;
+             }
+    }
+    #main{
+        .introduce{
+            padding: 0 30px 60px;
+            .textBox{font-size: 16px;}
+            .introduceTitle{
+                font-size: 2.4rem;
+            }
+            .left{
+                .picture{
+                    width: 200px;
+                    scale: 1;
+                    margin: 70px 0 20px;
+                }
+            }
+        }
+        .hardskillBox{
+            .hardSkill{
+                width: 240px;
+            }
+            .hardskillList
+            >li{
+                .skillText{font-size: 16px;}
+                .hardskillName{font-size: 20px;}
+                >img{
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+        .contentBox{
+            .fileBox{
+                align-items: flex-start;
+                .file{
+                    >span{
+                       font-size: 0.8rem;
+                   }
+                   }
+            }
+            .content{
+                .contentItem{
+                    .btnP{
+                        .moreBtn{
+                            padding: 1px 7px;
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .topButton{
+            right: 4%;
+            bottom: 3%;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

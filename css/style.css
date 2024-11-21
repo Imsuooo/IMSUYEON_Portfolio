@@ -1,0 +1,623 @@
+#header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  background: #dfdfdf;
+}
+#header .mainBox {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#header .mainBox .category {
+  margin-top: 100px;
+  width: auto;
+}
+#header .mainBox .category .fillW {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 50px 0 60px 60px;
+}
+#header .mainBox .category .fillW:hover > svg {
+  fill: #000;
+}
+#header .mainBox .category .hello {
+  margin: 60px 0 60px 60px;
+}
+#header .mainBox .category .hello .line .blackBack {
+  display: inline-block;
+  background: #000;
+  border-radius: 40px;
+  color: #fff;
+  padding: 4px 17px;
+  font-size: 20px;
+}
+#header .mainBox .category .hello .down {
+  margin-top: 13px;
+}
+#header .mainBox .mainImg {
+  position: relative;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#header .mainBox .mainImg .bubble {
+  position: absolute;
+  top: 0;
+}
+#header .mainBox .mainImg .uxuiHeaderImg {
+  width: auto;
+  height: 100%;
+  display: block;
+  padding: 40px 0 40px 40px;
+}
+#header .pofo_info {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding: 0 5%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+#main .introduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px 80px 30px;
+}
+#main .introduce .textBox {
+  font-size: 18px;
+  color: #525252;
+}
+#main .introduce .introduceTitle {
+  font-size: 2.8rem;
+  margin-bottom: 2%;
+}
+#main .introduce .left {
+  width: 100%;
+}
+#main .introduce .left .picture {
+  scale: 0.8;
+}
+#main .introduce .left .picture > img {
+  display: block;
+}
+#main .introduce .left .infoBox {
+  padding-left: 7%;
+  margin-bottom: 5%;
+}
+#main .introduce .left .educationBox {
+  padding-left: 7%;
+}
+#main .introduce .right {
+  width: 100%;
+  padding-right: 7%;
+}
+#main .introduce .right .careerBox {
+  margin-bottom: 5%;
+}
+#main .hardskillBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+#main .hardskillBox .hardSkill {
+  width: 400px;
+  margin: 0 auto;
+}
+#main .hardskillBox .hardSkill > img {
+  width: 100%;
+}
+#main .hardskillBox .hardskillTitle {
+  padding: 0 5%;
+  font-size: 3.5rem;
+}
+#main .hardskillBox .hardskillList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 3% 5% 5%;
+}
+#main .hardskillBox .hardskillList > li {
+  height: 100%;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #E8E8E8;
+  border-radius: 20px;
+  box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.1960784314);
+}
+#main .hardskillBox .hardskillList > li .hardskillName {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 50px 0 20px;
+}
+#main .hardskillBox .hardskillList > li > img {
+  display: block;
+  width: 210px;
+  height: 210px;
+}
+#main .hardskillBox .hardskillList > li .skillText {
+  font-size: 18px;
+  font-weight: 200;
+  padding: 20px 0;
+  width: 275px;
+  color: #fff;
+  background: #000;
+  border-radius: 2px;
+  margin: 20px 0 50px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3098039216);
+}
+#main .contentBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 90px;
+}
+#main .contentBox .contentTitle {
+  padding: 0 5%;
+  font-size: 3.5rem;
+}
+#main .contentBox .fileBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 3% 5% 5%;
+}
+#main .contentBox .fileBox .file {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#main .contentBox .fileBox .file:hover .fileImg, #main .contentBox .fileBox .file:hover > span {
+  background: #d7d7d7;
+  border-radius: 3%;
+}
+#main .contentBox .fileBox .file .fileImg {
+  padding: 12px 10px 12px 14px;
+  display: block;
+}
+#main .contentBox .fileBox .file .fileImg .fileClose {
+  width: 100%;
+  display: block;
+}
+#main .contentBox .fileBox .file .fileImg .fileOpen {
+  width: 100%;
+  display: none;
+}
+#main .contentBox .fileBox .file > span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 2%;
+}
+#main .contentBox .content {
+  width: 100%;
+  height: 100%;
+  padding: 1% 5%;
+}
+#main .contentBox .content .contentItem {
+  display: none;
+  flex-direction: column;
+  position: relative;
+}
+#main .contentBox .content .contentItem .btnP {
+  position: relative;
+}
+#main .contentBox .content .contentItem .btnP > img {
+  display: block;
+  width: 100%;
+}
+#main .contentBox .content .contentItem .btnP .moreBtn {
+  position: absolute;
+  width: auto;
+  display: block;
+  top: 20%;
+  left: 7%;
+  font-size: 1.3rem;
+  padding: 5px 14px;
+  border-radius: 30px;
+  border: 1px solid #000;
+  transition: 0.3s;
+  color: #000;
+}
+#main .contentBox .content .contentItem .btnP .moreBtn:hover {
+  color: #fff;
+  background: #000;
+}
+#main .contentBox .content .contentItem .btnP .moreBtnm {
+  top: 16%;
+}
+#main .contentBox .content .contentItem .btnE .moreBtn {
+  top: 7.5%;
+  left: 7%;
+}
+#main .contentBox .content .contentItem .linkBox {
+  display: flex;
+}
+#main .contentBox .content .contentItem .linkBox > a {
+  display: block;
+  position: relative;
+}
+#main .contentBox .content .contentItem .linkBox > a > img {
+  width: 100%;
+  vertical-align: bottom;
+}
+#main .contentBox .content .contentItem .linkBox > a .sitegoL {
+  opacity: 0;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  font-size: 1.4rem;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7647058824);
+  padding: 10px 13px;
+  border-radius: 70px;
+  border: 1px solid #ffffff;
+}
+#main .contentBox .content .contentItem .linkBox > a .sitegoR {
+  opacity: 0;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  font-size: 1.4rem;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7647058824);
+  padding: 10px 13px;
+  border-radius: 70px;
+  border: 1px solid #ffffff;
+}
+#main .contentBox .content .contentItem .linkBox > a:hover .sitegoL {
+  opacity: 1;
+}
+#main .contentBox .content .contentItem .linkBox > a:hover .sitegoR {
+  opacity: 1;
+}
+#main .contentBox .content .contentItem .linkBox .none {
+  pointer-events: none;
+}
+#main .contentBox .content .eheheProject .eheheLast {
+  width: 100%;
+  position: relative;
+}
+#main .contentBox .content .eheheProject .eheheLast .eheheProject04 {
+  width: 100%;
+}
+#main .contentBox .content .eheheProject .eheheLast .gifArea {
+  position: absolute;
+  width: 53%;
+  display: flex;
+  bottom: 14.6%;
+  left: 24%;
+  gap: 1%;
+}
+#main .contentBox .content .eheheProject .eheheLast .gifArea .gifL {
+  width: 71.7%;
+}
+#main .contentBox .content .eheheProject .eheheLast .gifArea .gifL > img {
+  width: 100%;
+}
+#main .contentBox .content .eheheProject .eheheLast .gifArea .gifR {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+#main .contentBox .content .eheheProject .eheheLast .gifArea .gifR > img {
+  width: 100%;
+}
+
+#footer .topButton {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 130px;
+  height: 130px;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+}
+#footer .topButton > img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1260px) {
+  #header {
+    height: 100%;
+  }
+  #header .mainBox {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  #header .mainBox .category {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 20px;
+  }
+  #header .mainBox .category .fillW {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #header .mainBox .category .fillW > svg {
+    width: 90%;
+  }
+  #header .mainBox .category .hello {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  #header .mainBox .category .hello .line {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  #header .mainBox .mainImg {
+    width: 100%;
+    height: inherit;
+  }
+  #header .mainBox .mainImg .bubble {
+    width: 75%;
+  }
+  #header .mainBox .mainImg .me {
+    width: 100%;
+  }
+  #header .mainBox .mainImg .uxuiHeaderImg {
+    height: initial;
+    padding: 0px;
+  }
+  #main .introduce {
+    align-items: flex-end;
+    gap: 2%;
+  }
+  #main .hardskillBox {
+    padding-bottom: 80px;
+  }
+  #main .hardskillBox .hardskillList {
+    gap: 1.5%;
+  }
+  #main .contentBox .content .contentItem .btnP .moreBtn {
+    font-size: 1.2rem;
+  }
+  #main .contentBox .content .contentItem .linkBox > a .sitegoL {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 65%;
+  }
+  #main .contentBox .content .contentItem .linkBox > a .sitegoR {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #main .hardskillBox {
+    padding-bottom: 80px;
+  }
+  #main .hardskillBox .hardSkill {
+    width: 340px;
+  }
+  #main .hardskillBox .hardskillList {
+    flex-direction: column;
+  }
+  #main .hardskillBox .hardskillList > li {
+    width: 100%;
+  }
+  #main .hardskillBox .hardskillList > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  #main .hardskillBox .hardskillList > li .skillText {
+    width: 90%;
+  }
+  .contentBox .content .contentItem .btnP .moreBtn {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  #main .introduce {
+    flex-wrap: wrap;
+    padding: 20px 30px 90px 30px;
+    text-align: center;
+  }
+  #main .introduce .left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main .introduce .left .picture {
+    width: 260px;
+    scale: 1;
+    margin: 70px 0 40px;
+  }
+  #main .introduce .left .picture > img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #main .introduce .left .infoBox {
+    padding-left: 0%;
+  }
+  #main .introduce .left .educationBox {
+    padding-left: 0%;
+    margin-bottom: 5%;
+  }
+  #main .introduce .right {
+    padding-right: 0%;
+  }
+  #main .introduce .right .careerBox {
+    margin-bottom: 5%;
+  }
+  #main .hardskillBox .hardSkill {
+    width: 300px;
+  }
+  #main .contentBox .content .contentItem .linkBox > a .sitegoL {
+    font-size: 1rem;
+    width: 65%;
+  }
+  #main .contentBox .content .contentItem .linkBox > a .sitegoR {
+    font-size: 1rem;
+    width: 65%;
+  }
+  #footer .topButton {
+    right: 3%;
+    bottom: 3%;
+    width: 62px;
+    height: 62px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #header .mainBox {
+    padding: 30px 0;
+  }
+  #header .mainBox .category {
+    flex-wrap: wrap;
+    margin: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #header .mainBox .category .fillW {
+    padding: 10px;
+  }
+  #header .mainBox .mainImg {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #header .pofo_info {
+    bottom: 3%;
+    font-size: 1.2rem;
+  }
+  #main .hardskillBox .hardskillTitle {
+    font-size: 3rem;
+  }
+  #main .contentBox {
+    padding-top: 60px;
+  }
+  #main .contentBox .contentTitle {
+    font-size: 3rem;
+  }
+  #main .contentBox .fileBox {
+    gap: 1%;
+  }
+  #main .contentBox .fileBox .file .fileImg {
+    padding: 10px 8px 10px 12px;
+  }
+  #main .contentBox .fileBox .file > span {
+    padding: 3px 8px;
+    font-size: 1rem;
+  }
+  #main .contentBox .content {
+    padding: 1% 3%;
+  }
+  #main .contentBox .content .contentItem .btnP .moreBtn {
+    padding: 3px 10px;
+    font-size: 0.8rem;
+  }
+  #main .contentBox .content .contentItem .linkBox > a .sitegoL {
+    font-size: 0.8rem;
+    width: 60%;
+    padding: 3px 7px;
+  }
+  #main .contentBox .content .contentItem .linkBox > a .sitegoR {
+    font-size: 0.8rem;
+    width: 60%;
+    padding: 3px 7px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 30px 0;
+  }
+  #header .mainBox .category {
+    margin: 0 0 30px 0;
+  }
+  #header .mainBox .category .fillW {
+    padding: 5px;
+  }
+  #header .mainBox .category .fillW > svg {
+    width: 83%;
+  }
+  #header .mainBox .category .hello {
+    display: none;
+  }
+  #header .mainBox .mainImg {
+    scale: 1.2;
+  }
+  #header .pofo_info {
+    bottom: 3%;
+    font-size: 1rem;
+  }
+  #main .introduce {
+    padding: 0 30px 60px;
+  }
+  #main .introduce .textBox {
+    font-size: 16px;
+  }
+  #main .introduce .introduceTitle {
+    font-size: 2.4rem;
+  }
+  #main .introduce .left .picture {
+    width: 200px;
+    scale: 1;
+    margin: 70px 0 20px;
+  }
+  #main .hardskillBox .hardSkill {
+    width: 240px;
+  }
+  #main .hardskillBox .hardskillList > li .skillText {
+    font-size: 16px;
+  }
+  #main .hardskillBox .hardskillList > li .hardskillName {
+    font-size: 20px;
+  }
+  #main .hardskillBox .hardskillList > li > img {
+    width: 180px;
+    height: 180px;
+  }
+  #main .contentBox .fileBox {
+    align-items: flex-start;
+  }
+  #main .contentBox .fileBox .file > span {
+    font-size: 0.8rem;
+  }
+  #main .contentBox .content .contentItem .btnP .moreBtn {
+    padding: 1px 7px;
+    font-size: 0.6rem;
+  }
+  #footer .topButton {
+    right: 4%;
+    bottom: 3%;
+    width: 50px;
+    height: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
